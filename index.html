@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>mentalHealth</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <style>
+    .bgimage {
+    height:100vh;
+    background-image:url(https://images.ctfassets.net/9jm3t1lrj5m2/21ObFTtXrycFTERT8THXgc/deff5fe77d474047b4dca0b8278282ee/iStock-1390650720.jpg);
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 55%;
+}
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+/* spacing on all sections */
+#about, #services, #portfolio, #contact, #skills{
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+.ex-me{
+  margin-top: 35px;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+
+    border: 2px solid #0d96e0;
+
+    border-radius: 20px;
+
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#javascript-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 72%;
+    }
+}
+#jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 58%;
+    }
+} 
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.skills{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+  </style>
+  
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Why Mental Health !!??</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#qualifications">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Brain Breaks</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">HOPE :) </h2>
+                <p class="hero_desc">We're Your Friends</p>
+            </div>
+            </div>
+    </section>
+  <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">MENTAL HEALTH</h1>
+                <h1 class="position-absolute text-uppercase text-primary">WHY !!</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-3 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="https://i.pinimg.com/736x/54/56/60/545660e075906b91da25ea1955087664.jpg" alt="">
+                </div>
+                <div class="col-lg-9">
+                    <h3 class="py-2">It's OK NOT to be OK.<br>It's OK to ASK for HELP.<br>It's OK to TAKE a BREAK.</h3>
+                    <div class="row mb-3">
+                        <div class="py-2"><h4><span class="text-secondary">We're your personal happiness toolkit.From dancing like nobody's watching and belting out your favorite tunes to taking mindful breaks and sharing laughs with friends,help you bring a big smile on your face.<br> Here's it let the good vibes flow!<br>A happy mind is your superpower for enjoying each day to the fullest....LIVE.LOVE.LAUGH</span></h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+        <br>
+        <br>
+        <br>
+                <br>
+                <br>
+                <br>
+        <br>
+  <!-- Qualification Start -->
+  <section class="qualifications" id="qualifications">
+   
+    
+        <div class="container mt-3">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">For You</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Articles</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="stress.png" alt="Card image" style="width:100% height:auto">
+                        <div class="card-body">
+                            <h4 class="card-title">A Programmers Guide To Stress</h4>
+                            <p>By Daragh Byrne</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="wellbeingchallenge-burnout0922.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Beating Burnout</h4>
+                            <p>By Almanac Core</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="do-not-disturb-rubber-stamp-text-inside-illustration-92047116.jpg" alt="Card image" style="width:100% ">
+                        <div class="card-body">
+                            <h4 class="card-title">Do not Disturb</h4>
+                            <p>By Joe Bell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <br>
+                <br>
+                <br>
+            
+        <div class="container mt-3">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">For You</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Podcast</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="IMG_0786.JPG" alt="Card image" style="width:100% height:auto">
+                        <div class="card-body">
+                            <h4 class="card-title">Happier</h4>
+                            <p>By Gretchen Rubin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="IMG_0785.JPG" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">On Purpose</h4>
+                            <p>By Jay Shetty</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="IMG_0787.JPG" alt="Card image" style="width:100% ">
+                        <div class="card-body">
+                            <h4 class="card-title">The Ranveer Show</h4>
+                            <p>By Ranveer Allahabadia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+                <br>
+                <br>
+                <br>
+                
+            <div class="container mt-3">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">For You</h1>
+                    <h1 class="position-absolute text-uppercase text-primary">Books</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="think-like-a-monk-the-secret-of-how-to-harness-the-power-of-positivity-and-be-happy-now.jpg" alt="Card image" style="width:100% height:auto">
+                            <div class="card-body">
+                                <h4 class="card-title">Think like a Monk</h4>
+                                <p>By Jay Shetty</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="AH.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Atomic Habits</h4>
+                                <p>By James Clear</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="Screenshot_2021-03-09-14-10-44-993_com.instagram.android.jpg" alt="Card image" style="width:100% ">
+                            <div class="card-body">
+                                <h4 class="card-title">The Power of Subconcious Mind</h4>
+                                <p>By Joseph Murphy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+                <br>
+                <br>
+                <br>
+                
+            <div class="container mt-3">
+                <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">For You</h1>
+                    <h1 class="position-absolute text-uppercase text-primary">Influencers</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="GGD.JPG" alt="Card image" style="width:100% height:auto">
+                            <div class="card-body">
+                                <h4 class="card-title">Gaur Gopal Das</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="jay shetty.JPG" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Jay Shetty</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="RS.JPG" alt="Card image" style="width:100% ">
+                            <div class="card-body">
+                                <h4 class="card-title">Robin Sharma</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="deepak.JPG" alt="Card image" style="width:100% ">
+                            <div class="card-body">
+                                <h4 class="card-title">Dr.Deepa Chopra</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="GR.JPG" alt="Card image" style="width:100% ">
+                            <div class="card-body">
+                                <h4 class="card-title">Grentchen Rubin</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="Sandeep.JPG" alt="Card image" style="width:100% ">
+                            <div class="card-body">
+                                <h4 class="card-title">Sandeep Maheshwari</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+  </section>
+  
+    <!-- portfolio section-->
+    <section class ="portfolio" id="portfolio">
+        <div class="container mt-3">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Brain</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Breaks</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://thehill.com/wp-content/uploads/sites/2/2021/07/ca_friend_console_sadness_mentalhealth_illustration_istock-1256279257.jpg?w=1280&h=720&crop=1" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Call a Friend</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://canyonvista.com/wp-content/uploads/2018/01/dance-movement-therapy-in-addiction-recovery.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Music and Dance Breaks</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://www.parents.com/thmb/XdvJ7VitNJ_F5ZiQU5EEkeak_mE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MotherDaughterTalking-1-2000-e3d6082c8d724f61b83608bdb5635267.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Have a chat with your Parents</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://marketplace.canva.com/EAFCslBdlJU/1/0/1600w/canva-pastel-doodle-mental-health-daily-affirmations-instagram-post-3selZX-JfdE.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Self-Affirmations and Journaling</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://static.wixstatic.com/media/4383bd_a33a62de0f04461fb94aebf71a1bbeed~mv2.jpg/v1/fill/w_1000,h_666,al_c,q_85,usm_0.66_1.00_0.01/4383bd_a33a62de0f04461fb94aebf71a1bbeed~mv2.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Watch your Favourite movie</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUwREtsPkJQCa4p_FgbBooJsASiU2T0VuCKQ&usqp=CAU" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Laughter Yoga</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+</body>
+</html>
+
+
+
